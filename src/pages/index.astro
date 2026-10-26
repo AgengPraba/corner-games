@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import GameCatalog from '../components/GameCatalog.svelte';
+---
+<BaseLayout>
+  <header class="wrap site-header">
+    <a class="brand" href="#top" aria-label="Playroom home"><span class="brand-mark">▶</span><span>playroom<span style="color:var(--orange)">.</span></span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#games">The games</a>
+      <a href="#about">About</a>
+      <a class="nav-cta" href="#games">Let's play! ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="wrap hero">
+      <div>
+        <span class="eyebrow mono">✳ YOUR LITTLE CORNER OF FUN</span>
+        <h1>Little games.<br /><span class="orange">Big fun.</span></h1>
+        <p>A tiny collection of browser games made with curiosity, a little code, and a whole lot of fun. Pick a game and stay awhile!</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#games">▶ &nbsp; Find a game</a><a class="btn btn-secondary" href="#about">Meet the maker ↗</a></div>
+      </div>
+      <div class="hero-art" aria-label="Playful retro game illustration">
+        <div class="art-sun"></div><span class="spark one">✳</span><span class="spark two">✦</span>
+        <div class="art-card"><div class="art-screen"><span class="pixel-sun"></span><span class="pixel-cloud">▪ ▪</span><span class="pixel-character">🐸</span></div><div class="art-label"><span>PIXEL ADVENTURE</span><span>▶ PLAY</span></div></div>
+        <div class="art-sticker">100% FUN<br />0% BORING</div>
+      </div>
+    </section>
+
+    <div class="ticker"><div class="wrap ticker-inner"><span><b>✳</b> PICK A GAME</span><span><b>✳</b> PRESS PLAY</span><span><b>✳</b> HAVE SOME FUN</span><span><b>✳</b> REPEAT FOREVER</span></div></div>
+
+    <section class="wrap section" id="games">
+      <div class="section-head"><div><div class="section-kicker mono">THE ARCADE / VOL. 001</div><h2>Choose your player.</h2></div><p class="section-note">Tiny adventures, quick puzzles, and silly little challenges. Which one is calling your name?</p></div>
+      <GameCatalog client:load />
+    </section>
+
+    <section class="wrap section" id="about">
+      <div class="about"><div class="about-art" aria-hidden="true">🕹️</div><div><div class="section-kicker mono">A NOTE FROM THE MAKER</div><h2>Made for fun.<br />Built with code.</h2><p>Hey! This is my little corner of the internet where I collect the browser games I make. Each game is a tiny experiment, a new idea, or just an excuse to make something fun. Grab a snack and give them a try.</p><div class="tech-tags"><span>HTML</span><span>CSS</span><span>JAVASCRIPT</span><span>MADE WITH ☻</span></div></div></div>
+    </section>
+  </main>
+
+  <footer class="wrap footer"><div><strong>playroom.</strong> — a small place to play.</div><div>Made with ♥ & a little bit of nostalgia.</div><a href="#top">Back to top ↑</a></footer>
+</BaseLayout>
