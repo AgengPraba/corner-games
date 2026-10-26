@@ -5,7 +5,17 @@
   // Ganti url dengan path file HTML game kamu, misalnya: /games/space-cat/index.html
   // Untuk sementara, game contoh memakai URL # dan berfungsi sebagai placeholder.
   const games = [
-    { title: 'Pixel Pouncer', category: 'Platformer', description: 'Lompat, kumpulkan bintang, dan jangan sampai jatuh!', emoji: '🐸', color: 'cover-mint', badge: 'Featured', time: '5 MIN', url: '#', number: '01' },
+    {
+      title: 'Royal Pixel Chess',
+      category: 'Strategy',
+      description: 'Pertempuran catur kerajaan bergaya pixel dengan animasi serangan epik, 10 level bot, dan mode 2 pemain!',
+      emoji: '👑',
+      color: 'cover-gold',
+      badge: 'Featured',
+      time: '10 MIN',
+      url: 'https://royal-pixel-chess.vercel.app/',
+      number: '01'
+    },
     { title: 'Snack Attack', category: 'Arcade', description: 'Makan sebanyak mungkin sebelum waktu habis.', emoji: '🍊', color: 'cover-orange', badge: 'New', time: '2 MIN', url: '#', number: '02' },
     { title: 'Cosmic Buddy', category: 'Arcade', description: 'Jelajahi galaksi kecil penuh kejutan dan alien lucu.', emoji: '👾', color: 'cover-blue', badge: '', time: 'ENDLESS', url: '#', number: '03' },
     { title: 'Little Puzzler', category: 'Puzzle', description: 'Putar, cocokkan, dan pecahkan teka-teki mini.', emoji: '🧩', color: 'cover-yellow', badge: '', time: '3 MIN', url: '#', number: '04' },
